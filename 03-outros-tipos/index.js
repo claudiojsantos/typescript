@@ -87,3 +87,8 @@ var pontos = {
     z: 30
 };
 showCoordinates(pontos);
+// Literal Types
+function showDirection(direction) {
+    console.log("A dire\u00E7\u00E3o escolhida foi ".concat(direction));
+}
+showDirection("up");

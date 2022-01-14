@@ -143,3 +143,11 @@ const pontos: Point = {
 };
 
 showCoordinates(pontos);
+
+// Literal Types
+
+function showDirection(direction: "up" | "down" | "left") {
+  console.log(`A direção escolhida foi ${direction}`);
+}
+
+showDirection("up");
