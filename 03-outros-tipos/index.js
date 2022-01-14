@@ -46,3 +46,12 @@ function showNumbers(a, b, c) {
 }
 showNumbers(1, 2, 3);
 showNumbers(1, 2);
+// maneira correta de validar argumentos
+function advancedGreetings(firstName, lastName) {
+    if (lastName !== undefined) {
+        return "Ol\u00E1 ".concat(firstName, " ").concat(lastName, ", tudo bem?");
+    }
+    return "Ol\u00E1 ".concat(firstName, ", tudo bem?");
+}
+console.log(advancedGreetings("Cláudio", "Santos"));
+console.log(advancedGreetings("Antonio"));

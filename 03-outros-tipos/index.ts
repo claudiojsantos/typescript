@@ -74,3 +74,16 @@ function showNumbers(a: number, b: number, c?: number): void {
 
 showNumbers(1, 2, 3);
 showNumbers(1, 2);
+
+// maneira correta de validar argumentos
+
+function advancedGreetings(firstName: string, lastName?: string): string {
+  if (lastName !== undefined) {
+    return `Olá ${firstName} ${lastName}, tudo bem?`;
+  }
+
+  return `Olá ${firstName}, tudo bem?`;
+}
+
+console.log(advancedGreetings("Cláudio", "Santos"));
+console.log(advancedGreetings("Antonio"));
