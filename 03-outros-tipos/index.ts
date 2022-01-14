@@ -87,3 +87,16 @@ function advancedGreetings(firstName: string, lastName?: string): string {
 
 console.log(advancedGreetings("Cláudio", "Santos"));
 console.log(advancedGreetings("Antonio"));
+
+// union type
+
+function showBalance(balance: number | string) {
+  console.log(`O saldo atual é R$ ${balance}`);
+}
+
+showBalance(1200);
+showBalance("1200");
+
+const values: Array<number | string | boolean> = [1, "2", false];
+
+console.log(values);

@@ -55,3 +55,11 @@ function advancedGreetings(firstName, lastName) {
 }
 console.log(advancedGreetings("Cláudio", "Santos"));
 console.log(advancedGreetings("Antonio"));
+// union type
+function showBalance(balance) {
+    console.log("O saldo atual \u00E9 R$ ".concat(balance));
+}
+showBalance(1200);
+showBalance("1200");
+var values = [1, "2", false];
+console.log(values);
