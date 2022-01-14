@@ -33,3 +33,11 @@ console.log(arr1);
 arr1.push([20, 30, 40]);
 
 console.log(arr1);
+
+// Parametros Tipados
+
+function soma(a: number, b: number) {
+  console.log(a + b);
+}
+
+soma(12, 34);

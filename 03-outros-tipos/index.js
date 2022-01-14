@@ -19,3 +19,8 @@ var arr1 = [1, 2, "a", "b", [], { name: "Claudio" }, true];
 console.log(arr1);
 arr1.push([20, 30, 40]);
 console.log(arr1);
+// Parametros Tipados
+function soma(a, b) {
+    console.log(a + b);
+}
+soma(12, 34);
