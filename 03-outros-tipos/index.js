@@ -36,3 +36,13 @@ function coordinates(coor) {
 }
 var coordenadas = { x: 213, y: 554 };
 coordinates(coordenadas);
+// argumentos opcionais
+function showNumbers(a, b, c) {
+    console.log("A: ".concat(a));
+    console.log("B: ".concat(b));
+    if (c) {
+        console.log("C: ".concat(c));
+    }
+}
+showNumbers(1, 2, 3);
+showNumbers(1, 2);
