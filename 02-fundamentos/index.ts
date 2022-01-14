@@ -25,3 +25,12 @@ let a: boolean = true;
 
 console.log(a);
 console.log(typeof a);
+
+// Annotation and Inference
+
+const annt: string = "Teste"; // Annotation
+
+const inf = 3; // Inference
+
+console.log(typeof annt);
+console.log(typeof inf);

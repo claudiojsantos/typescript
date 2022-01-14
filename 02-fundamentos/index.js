@@ -16,3 +16,8 @@ console.log(typeof firstName);
 var a = true;
 console.log(a);
 console.log(typeof a);
+// Annotation and Inference
+var annt = "Teste"; // Annotation
+var inf = 3; // Inference
+console.log(typeof annt);
+console.log(typeof inf);
