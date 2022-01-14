@@ -63,3 +63,12 @@ showBalance(1200);
 showBalance("1200");
 var values = [1, "2", false];
 console.log(values);
+// validando union type
+function showRole(role) {
+    if (typeof role === "boolean") {
+        return "Usu\u00E1rio n\u00E3o aprovado";
+    }
+    return "Perfil de Usu\u00E1rio: ".concat(role);
+}
+console.log(showRole(false));
+console.log(showRole("Admin"));

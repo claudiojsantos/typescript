@@ -100,3 +100,15 @@ showBalance("1200");
 const values: Array<number | string | boolean> = [1, "2", false];
 
 console.log(values);
+
+// validando union type
+function showRole(role: string | boolean) {
+  if (typeof role === "boolean") {
+    return `Usuário não aprovado`;
+  }
+
+  return `Perfil de Usuário: ${role}`;
+}
+
+console.log(showRole(false));
+console.log(showRole("Admin"));
