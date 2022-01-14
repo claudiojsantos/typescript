@@ -18,3 +18,10 @@ console.log(firstName.toLowerCase());
 console.log(firstName + " " + lastName);
 
 console.log(typeof firstName);
+
+// Boolean
+
+let a: boolean = true;
+
+console.log(a);
+console.log(typeof a);

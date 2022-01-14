@@ -12,3 +12,7 @@ console.log(firstName.toUpperCase());
 console.log(firstName.toLowerCase());
 console.log(firstName + " " + lastName);
 console.log(typeof firstName);
+// Boolean
+var a = true;
+console.log(a);
+console.log(typeof a);
