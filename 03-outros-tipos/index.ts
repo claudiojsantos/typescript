@@ -123,3 +123,23 @@ function showCod(cod: ID) {
 showCod(1);
 showCod("2");
 showCod("3000");
+
+// interfaces
+
+interface Point {
+  x: number;
+  y: number;
+  z: number;
+}
+
+function showCoordinates(coord: Point) {
+  console.log(`x: ${coord.x}, y: ${coord.y}, z: ${coord.z}`);
+}
+
+const pontos: Point = {
+  x: 10,
+  y: 20,
+  z: 30,
+};
+
+showCoordinates(pontos);

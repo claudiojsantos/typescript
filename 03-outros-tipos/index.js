@@ -78,3 +78,12 @@ function showCod(cod) {
 showCod(1);
 showCod("2");
 showCod("3000");
+function showCoordinates(coord) {
+    console.log("x: ".concat(coord.x, ", y: ").concat(coord.y, ", z: ").concat(coord.z));
+}
+var pontos = {
+    x: 10,
+    y: 20,
+    z: 30
+};
+showCoordinates(pontos);
