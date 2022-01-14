@@ -49,3 +49,14 @@ function boasvindas(name: string): string {
 }
 
 console.log(boasvindas("Cláudio"));
+
+// Tipo de Objetos
+
+function coordinates(coor: { x: number; y: number }) {
+  console.log(`coordinate x: ${coor.x}`);
+  console.log(`coordinate y: ${coor.y}`);
+}
+
+const coordenadas = { x: 213, y: 554 };
+
+coordinates(coordenadas);

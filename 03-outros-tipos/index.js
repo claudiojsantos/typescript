@@ -29,3 +29,10 @@ function boasvindas(name) {
     return "Ol\u00E1 ".concat(name);
 }
 console.log(boasvindas("Cláudio"));
+// Tipo de Objetos
+function coordinates(coor) {
+    console.log("coordinate x: ".concat(coor.x));
+    console.log("coordinate y: ".concat(coor.y));
+}
+var coordenadas = { x: 213, y: 554 };
+coordinates(coordenadas);
