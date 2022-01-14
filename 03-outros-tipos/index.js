@@ -14,3 +14,8 @@ numbers.reverse();
 console.log(numbers);
 numbers.pop();
 console.log(numbers);
+// Any
+var arr1 = [1, 2, "a", "b", [], { name: "Claudio" }, true];
+console.log(arr1);
+arr1.push([20, 30, 40]);
+console.log(arr1);
