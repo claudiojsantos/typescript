@@ -10,3 +10,16 @@ numeros.reverse();
 console.log(numeros);
 
 console.log(typeof numeros);
+
+// Array 2
+
+let numbers: Array<number> = [100, 200, 300, 400];
+
+numbers.push(500);
+console.log(numbers);
+
+numbers.reverse();
+console.log(numbers);
+
+numbers.pop();
+console.log(numbers);
