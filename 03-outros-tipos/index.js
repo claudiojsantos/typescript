@@ -72,3 +72,9 @@ function showRole(role) {
 }
 console.log(showRole(false));
 console.log(showRole("Admin"));
+function showCod(cod) {
+    console.log("O c\u00F3digo \u00E9 ".concat(cod));
+}
+showCod(1);
+showCod("2");
+showCod("3000");
