@@ -24,3 +24,8 @@ function soma(a, b) {
     console.log(a + b);
 }
 soma(12, 34);
+// tipo de retorno de função
+function boasvindas(name) {
+    return "Ol\u00E1 ".concat(name);
+}
+console.log(boasvindas("Cláudio"));

@@ -41,3 +41,11 @@ function soma(a: number, b: number) {
 }
 
 soma(12, 34);
+
+// tipo de retorno de função
+
+function boasvindas(name: string): string {
+  return `Olá ${name}`;
+}
+
+console.log(boasvindas("Cláudio"));
