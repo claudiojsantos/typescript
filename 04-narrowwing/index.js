@@ -77,3 +77,25 @@ console.log(john);
 console.log(paul);
 greetingsUser(john);
 greetingsUser(paul);
+// operador in
+var Dog = /** @class */ (function () {
+    function Dog(name, breed) {
+        this.name = name;
+        if (breed) {
+            this.breed = breed;
+        }
+    }
+    return Dog;
+}());
+var toto = new Dog("toto");
+var file = new Dog("file", "Yorkshire");
+function showDetailsDog(dog) {
+    if ("breed" in dog) {
+        console.log("A ra\u00E7a de ".concat(dog.name, " \u00E9 ").concat(dog.breed));
+    }
+    else {
+        console.log("A ra\u00E7a de ".concat(dog.name, " \u00E9 SRD"));
+    }
+}
+showDetailsDog(toto);
+showDetailsDog(file);

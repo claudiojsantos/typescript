@@ -70,3 +70,31 @@ console.log(paul);
 
 greetingsUser(john);
 greetingsUser(paul);
+
+// operador in
+
+class Dog {
+  name: string;
+  breed: string;
+
+  constructor(name: string, breed?: string) {
+    this.name = name;
+    if (breed) {
+      this.breed = breed;
+    }
+  }
+}
+
+const toto = new Dog("toto");
+const file = new Dog("file", "Yorkshire");
+
+function showDetailsDog(dog: Dog) {
+  if ("breed" in dog) {
+    console.log(`A raça de ${dog.name} é ${dog.breed}`);
+  } else {
+    console.log(`A raça de ${dog.name} é SRD`);
+  }
+}
+
+showDetailsDog(toto);
+showDetailsDog(file);
