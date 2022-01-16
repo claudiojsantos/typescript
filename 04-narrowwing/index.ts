@@ -37,3 +37,36 @@ function operations(values: number[], operation?: string | undefined) {
 operations([1, 2, 3]);
 operations([1, 2, 3], "sum");
 operations([2, 4, 6], "multiply");
+
+// Instance of
+
+class User {
+  name: string;
+
+  constructor(name: string) {
+    this.name = name;
+  }
+}
+
+class SuperUser extends User {
+  constructor(name: string) {
+    super(name);
+  }
+}
+
+function greetingsUser(user: object) {
+  if (user instanceof SuperUser) {
+    console.log(`Welcome ${user.name}. View your credentials?`);
+  } else if (user instanceof User) {
+    console.log(`Welcome ${user.name}`);
+  }
+}
+
+const john = new User("john");
+const paul = new SuperUser("paul");
+
+console.log(john);
+console.log(paul);
+
+greetingsUser(john);
+greetingsUser(paul);
