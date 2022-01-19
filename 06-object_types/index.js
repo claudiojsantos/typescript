@@ -27,3 +27,8 @@ showUserDetails({
     name: "Antonio Cláudio",
     email: "antonio@sistnet.com.br"
 });
+var Ka = {
+    brand: "Ford",
+    wheels: 5
+};
+// Ka.wheels = 4; // dont permitted

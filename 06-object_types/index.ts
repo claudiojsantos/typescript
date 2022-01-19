@@ -51,3 +51,17 @@ showUserDetails({
   name: "Antonio Cláudio",
   email: "antonio@sistnet.com.br",
 });
+
+// read-only
+
+interface Car {
+  brand: string;
+  readonly wheels: number;
+}
+
+const Ka: Car = {
+  brand: "Ford",
+  wheels: 5,
+};
+
+// Ka.wheels = 4; // dont permitted
