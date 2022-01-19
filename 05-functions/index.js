@@ -70,3 +70,15 @@ function sum(a, b) {
 }
 console.log(sum(5));
 console.log(sum(5, 6));
+// unknown
+function doSomething(x) {
+    if (typeof x === "number") {
+        console.log("X é um número");
+    }
+    else if (Array.isArray(x)) {
+        console.log(x[0]);
+    }
+}
+doSomething(34);
+doSomething(["a", "b", "c"]);
+doSomething([1, 2, 3]);

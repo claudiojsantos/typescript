@@ -87,3 +87,17 @@ function sum(a: number, b = 5): number {
 
 console.log(sum(5));
 console.log(sum(5, 6));
+
+// unknown
+
+function doSomething(x: unknown) {
+  if (typeof x === "number") {
+    console.log("X é um número");
+  } else if (Array.isArray(x)) {
+    console.log(x[0]);
+  }
+}
+
+doSomething(34);
+doSomething(["a", "b", "c"]);
+doSomething([1, 2, 3]);
