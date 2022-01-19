@@ -54,3 +54,12 @@ function mergeArrays(arr1, arr2) {
 }
 console.log(mergeArrays([1, 2, 3], [4, 5, 6]));
 console.log(mergeArrays([1, 2, 3], ["a", "b", "c", "d"]));
+// optional arguments
+function formalGrettings(name, greet) {
+    if (greet) {
+        return "Ol\u00E1 ".concat(greet, " ").concat(name);
+    }
+    return "Ol\u00E1 ".concat(name);
+}
+console.log(formalGrettings("Claudio"));
+console.log(formalGrettings("Antonio", "Dr."));

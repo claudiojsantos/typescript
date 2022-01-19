@@ -65,3 +65,16 @@ function mergeArrays<T>(arr1: T[], arr2: T[]) {
 
 console.log(mergeArrays([1, 2, 3], [4, 5, 6]));
 console.log(mergeArrays<number | string>([1, 2, 3], ["a", "b", "c", "d"]));
+
+// optional arguments
+
+function formalGrettings(name: string, greet?: string): string {
+  if (greet) {
+    return `Olá ${greet} ${name}`;
+  }
+
+  return `Olá ${name}`;
+}
+
+console.log(formalGrettings("Claudio"));
+console.log(formalGrettings("Antonio", "Dr."));
