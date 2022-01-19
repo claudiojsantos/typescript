@@ -78,3 +78,12 @@ function formalGrettings(name: string, greet?: string): string {
 
 console.log(formalGrettings("Claudio"));
 console.log(formalGrettings("Antonio", "Dr."));
+
+// default arguments
+
+function sum(a: number, b = 5): number {
+  return a + b;
+}
+
+console.log(sum(5));
+console.log(sum(5, 6));
