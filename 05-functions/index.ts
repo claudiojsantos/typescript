@@ -39,3 +39,20 @@ function mergeObjects<U, T>(obj1: U, obj2: T) {
 }
 
 console.log(mergeObjects({ nome: "claudio" }, { idade: 47 }));
+
+// contraints in generics
+
+function biggestNumber<T extends number | string>(a: T, b: T): T {
+  let biggest: T;
+
+  if (+a > +b) {
+    biggest = a;
+  } else {
+    biggest = b;
+  }
+
+  return biggest;
+}
+
+console.log(biggestNumber(10, 5));
+console.log(biggestNumber("7", "13"));

@@ -35,3 +35,16 @@ function mergeObjects(obj1, obj2) {
     return __assign(__assign({}, obj1), obj2);
 }
 console.log(mergeObjects({ nome: "claudio" }, { idade: 47 }));
+// contraints in generics
+function biggestNumber(a, b) {
+    var biggest;
+    if (+a > +b) {
+        biggest = a;
+    }
+    else {
+        biggest = b;
+    }
+    return biggest;
+}
+console.log(biggestNumber(10, 5));
+console.log(biggestNumber("7", "13"));
