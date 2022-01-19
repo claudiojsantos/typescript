@@ -48,3 +48,9 @@ function biggestNumber(a, b) {
 }
 console.log(biggestNumber(10, 5));
 console.log(biggestNumber("7", "13"));
+// type arguments
+function mergeArrays(arr1, arr2) {
+    return arr1.concat(arr2);
+}
+console.log(mergeArrays([1, 2, 3], [4, 5, 6]));
+console.log(mergeArrays([1, 2, 3], ["a", "b", "c", "d"]));
