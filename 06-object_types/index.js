@@ -12,3 +12,18 @@ var computer = {
 };
 showDetailsProduct(computer);
 showDetailsProduct({ name: "Computer old", value: 500.0, isAvailable: false });
+function showUserDetails(user) {
+    console.log("O usu\u00E1rio ".concat(user.name, " tem seu email ").concat(user.email));
+    if (user.role) {
+        console.log("Seu perfil \u00E9 ".concat(user.role));
+    }
+}
+showUserDetails({
+    name: "Cláudio Santos",
+    email: "claudio@sistnet.com.br",
+    role: "admin"
+});
+showUserDetails({
+    name: "Antonio Cláudio",
+    email: "antonio@sistnet.com.br"
+});

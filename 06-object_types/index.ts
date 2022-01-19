@@ -24,3 +24,30 @@ const computer = {
 
 showDetailsProduct(computer);
 showDetailsProduct({ name: "Computer old", value: 500.0, isAvailable: false });
+
+// optional parameter interfaces
+
+interface User {
+  name: string;
+  email: string;
+  role?: string;
+}
+
+function showUserDetails(user: User): void {
+  console.log(`O usuário ${user.name} tem seu email ${user.email}`);
+
+  if (user.role) {
+    console.log(`Seu perfil é ${user.role}`);
+  }
+}
+
+showUserDetails({
+  name: "Cláudio Santos",
+  email: "claudio@sistnet.com.br",
+  role: "admin",
+});
+
+showUserDetails({
+  name: "Antonio Cláudio",
+  email: "antonio@sistnet.com.br",
+});
