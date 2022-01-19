@@ -65,3 +65,19 @@ const Ka: Car = {
 };
 
 // Ka.wheels = 4; // dont permitted
+
+// index signature
+
+interface CoordObject {
+  [index: string]: number;
+}
+
+const coord: CoordObject = {
+  x: 10,
+};
+
+coord.y = 15;
+
+coord.z = 16;
+
+console.log(coord);

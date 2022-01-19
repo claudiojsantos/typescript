@@ -31,4 +31,9 @@ var Ka = {
     brand: "Ford",
     wheels: 5
 };
-// Ka.wheels = 4; // dont permitted
+var coord = {
+    x: 10
+};
+coord.y = 15;
+coord.z = 16;
+console.log(coord);
