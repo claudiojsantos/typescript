@@ -43,3 +43,10 @@ var claudio = {
     profession: "Analista de Sistemas"
 };
 console.log(claudio);
+var dalva = {
+    name: "Antonio Claudio",
+    age: 14,
+    college: "Contato Farol",
+    grade: 9
+};
+console.log(dalva);

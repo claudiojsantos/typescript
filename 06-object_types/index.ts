@@ -100,3 +100,20 @@ const claudio: Profession = {
 };
 
 console.log(claudio);
+
+interface College {
+  college: string;
+  grade: number;
+}
+
+// intersection Types
+type PeopleWithCollege = Pessoa & College;
+
+const dalva: PeopleWithCollege = {
+  name: "Antonio Claudio",
+  age: 14,
+  college: "Contato Farol",
+  grade: 9,
+};
+
+console.log(dalva);
