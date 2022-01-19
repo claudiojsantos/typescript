@@ -97,3 +97,10 @@ function sumAll() {
 }
 console.log(sumAll(1, 2, 3, 4, 5, 6));
 console.log(sumAll(4, 32, 5556, 443));
+// destructuring
+function showProductDetails(_a) {
+    var name = _a.name, price = _a.price;
+    return "O nome do produto \u00E9 ".concat(name, " e seu valor \u00E9 R$").concat(price);
+}
+var product = { name: "Macbook Pro 2017", price: 7000.0 };
+console.log(showProductDetails(product));

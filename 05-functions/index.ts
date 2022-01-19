@@ -118,3 +118,19 @@ function sumAll(...n: number[]): number {
 
 console.log(sumAll(1, 2, 3, 4, 5, 6));
 console.log(sumAll(4, 32, 5556, 443));
+
+// destructuring
+
+function showProductDetails({
+  name,
+  price,
+}: {
+  name: string;
+  price: number;
+}): string {
+  return `O nome do produto é ${name} e seu valor é R$${price}`;
+}
+
+const product = { name: "Macbook Pro 2017", price: 7000.0 };
+
+console.log(showProductDetails(product));
