@@ -82,3 +82,8 @@ function doSomething(x) {
 doSomething(34);
 doSomething(["a", "b", "c"]);
 doSomething([1, 2, 3]);
+// never
+function showError(msg) {
+    throw new Error(msg);
+}
+showError("Ocorreu algum erro");

@@ -101,3 +101,11 @@ function doSomething(x: unknown) {
 doSomething(34);
 doSomething(["a", "b", "c"]);
 doSomething([1, 2, 3]);
+
+// never
+
+function showError(msg: string): never {
+  throw new Error(msg);
+}
+
+showError("Ocorreu algum erro");
