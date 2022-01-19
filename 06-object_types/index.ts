@@ -81,3 +81,22 @@ coord.y = 15;
 coord.z = 16;
 
 console.log(coord);
+
+// extending interfaces
+
+interface Pessoa {
+  name: string;
+  age: number;
+}
+
+interface Profession extends Pessoa {
+  profession: string;
+}
+
+const claudio: Profession = {
+  name: "claudio",
+  age: 47,
+  profession: "Analista de Sistemas",
+};
+
+console.log(claudio);

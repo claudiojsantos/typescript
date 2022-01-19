@@ -37,3 +37,9 @@ var coord = {
 coord.y = 15;
 coord.z = 16;
 console.log(coord);
+var claudio = {
+    name: "claudio",
+    age: 47,
+    profession: "Analista de Sistemas"
+};
+console.log(claudio);
