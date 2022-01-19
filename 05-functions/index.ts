@@ -108,4 +108,13 @@ function showError(msg: string): never {
   throw new Error(msg);
 }
 
-showError("Ocorreu algum erro");
+// showError("Ocorreu algum erro");
+
+// rest operator
+
+function sumAll(...n: number[]): number {
+  return n.reduce((n, s) => n + s);
+}
+
+console.log(sumAll(1, 2, 3, 4, 5, 6));
+console.log(sumAll(4, 32, 5556, 443));

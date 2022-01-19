@@ -86,4 +86,14 @@ doSomething([1, 2, 3]);
 function showError(msg) {
     throw new Error(msg);
 }
-showError("Ocorreu algum erro");
+// showError("Ocorreu algum erro");
+// rest operator
+function sumAll() {
+    var n = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        n[_i] = arguments[_i];
+    }
+    return n.reduce(function (n, s) { return n + s; });
+}
+console.log(sumAll(1, 2, 3, 4, 5, 6));
+console.log(sumAll(4, 32, 5556, 443));
