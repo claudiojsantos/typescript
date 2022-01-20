@@ -131,3 +131,22 @@ myArray = myArray.map((item) => {
 });
 
 console.log(myArray);
+
+// tuplas
+
+type fiveNumbers = [number, number, number, number, number];
+
+const randomNumbers: fiveNumbers = [12, 23, 35, 48, 51];
+
+console.log(randomNumbers);
+
+type nameAge = [string, number];
+
+const user: nameAge = ["Claudio", 47];
+
+console.log(user);
+
+user[0] = "Antonio";
+user[1] = 14;
+
+console.log(user);

@@ -59,3 +59,10 @@ myArray = myArray.map(function (item) {
     return "Letra: ".concat(item);
 });
 console.log(myArray);
+var randomNumbers = [12, 23, 35, 48, 51];
+console.log(randomNumbers);
+var user = ["Claudio", 47];
+console.log(user);
+user[0] = "Antonio";
+user[1] = 14;
+console.log(user);
