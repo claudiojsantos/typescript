@@ -117,3 +117,17 @@ const dalva: PeopleWithCollege = {
 };
 
 console.log(dalva);
+
+// ReadOnly Array
+
+let myArray: ReadonlyArray<string> = ["a", "b", "c", "d"];
+
+myArray.forEach((item) => {
+  console.log(`Letra: ${item}`);
+});
+
+myArray = myArray.map((item) => {
+  return `Letra: ${item}`;
+});
+
+console.log(myArray);

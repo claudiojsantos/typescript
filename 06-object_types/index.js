@@ -50,3 +50,12 @@ var dalva = {
     grade: 9
 };
 console.log(dalva);
+// ReadOnly Array
+var myArray = ["a", "b", "c", "d"];
+myArray.forEach(function (item) {
+    console.log("Letra: ".concat(item));
+});
+myArray = myArray.map(function (item) {
+    return "Letra: ".concat(item);
+});
+console.log(myArray);
