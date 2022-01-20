@@ -150,3 +150,12 @@ user[0] = "Antonio";
 user[1] = 14;
 
 console.log(user);
+
+// tuplas com readonly
+
+function showNumbers(numbers: readonly [number, number]) {
+  console.log(numbers[0]);
+  console.log(numbers[1]);
+}
+
+showNumbers([2, 3]);
