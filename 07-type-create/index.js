@@ -21,3 +21,12 @@ var myPen = {
 };
 console.log(myCar);
 console.log(myPen);
+// type parameters
+function getSomekey(obj, key) {
+    return "A chave ".concat(key, " est\u00E1 presente no objeto e tem o valor de ").concat(obj[key]);
+}
+var server = {
+    hd: "8TB",
+    ram: "16GB"
+};
+console.log(getSomekey(server, "ram"));

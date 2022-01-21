@@ -41,3 +41,16 @@ const myPen: Pen = {
 
 console.log(myCar);
 console.log(myPen);
+
+// type parameters
+
+function getSomekey<T, k extends keyof T>(obj: T, key: k) {
+  return `A chave ${key} está presente no objeto e tem o valor de ${obj[key]}`;
+}
+
+const server = {
+  hd: "8TB",
+  ram: "16GB",
+};
+
+console.log(getSomekey(server, "ram"));
