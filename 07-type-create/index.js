@@ -41,3 +41,7 @@ var myChar = {
 console.log(showCharName(myChar, "name"));
 console.log(showCharName(myChar, "age"));
 console.log(showCharName(myChar, "hasDriveLicense"));
+// typeof type operators
+var userName = "Cláudio";
+var userName2 = "Antonio";
+var userName3 = "Aldo";

@@ -74,3 +74,12 @@ const myChar: Character = {
 console.log(showCharName(myChar, "name"));
 console.log(showCharName(myChar, "age"));
 console.log(showCharName(myChar, "hasDriveLicense"));
+
+// typeof type operators
+const userName: string = "Cláudio";
+
+const userName2: typeof userName = "Antonio";
+
+type x = typeof userName2;
+
+const userName3: x = "Aldo";
