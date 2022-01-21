@@ -30,3 +30,14 @@ var server = {
     ram: "16GB"
 };
 console.log(getSomekey(server, "ram"));
+function showCharName(obj, key) {
+    return "".concat(obj[key]);
+}
+var myChar = {
+    name: "Cláudio",
+    age: 47,
+    hasDriveLicense: true
+};
+console.log(showCharName(myChar, "name"));
+console.log(showCharName(myChar, "age"));
+console.log(showCharName(myChar, "hasDriveLicense"));
