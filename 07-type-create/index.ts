@@ -96,3 +96,19 @@ function showKm(km: km) {
 }
 
 showKm(newTruck.km);
+
+// conditional type check
+
+interface A {}
+
+interface B extends A {}
+
+interface Teste {
+  showName(): string;
+}
+
+type myType = B extends A ? number : string;
+
+const myVar: myType = 5;
+
+type myTypeB = Teste extends { showName(): string } ? string : boolean;

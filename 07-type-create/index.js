@@ -50,3 +50,4 @@ function showKm(km) {
     console.log("O ve\u00EDculo tem a km de ".concat(km));
 }
 showKm(newTruck.km);
+var myVar = 5;
