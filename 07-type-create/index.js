@@ -45,3 +45,8 @@ console.log(showCharName(myChar, "hasDriveLicense"));
 var userName = "Cláudio";
 var userName2 = "Antonio";
 var userName3 = "Aldo";
+var newTruck = { km: 10000, kg: 5000, description: "teste" };
+function showKm(km) {
+    console.log("O ve\u00EDculo tem a km de ".concat(km));
+}
+showKm(newTruck.km);
