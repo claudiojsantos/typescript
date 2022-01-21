@@ -12,3 +12,12 @@ function showNameProduct(obj) {
 }
 var myObj = { name: "Carro", cor: "vermelho" };
 showNameProduct(myObj);
+var myCar = { name: "Fusca", wheels: 4, engine: 1.4, color: "white" };
+var myPen = {
+    name: "Bic",
+    wheels: false,
+    engine: false,
+    color: "black"
+};
+console.log(myCar);
+console.log(myPen);
